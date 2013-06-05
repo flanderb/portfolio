@@ -59,44 +59,45 @@ nav p {
   background: url("../images/logo.png");
   font-size: 42px;
   margin: 0 0 0 0;
+  background-size: contain;
 }
 
-/* line 63, ../sass/style.scss */
+/* line 64, ../sass/style.scss */
 .logo {
-  /* display: inline-block; */
-  /* vertical-align: middle; */
-  /* width: 83px; */
-  /* height: 83px; */
+  display: inline-block;
+  vertical-align: middle;
+  width: 83px;
+  height: 83px;
 }
 
-/* line 70, ../sass/style.scss */
+/* line 71, ../sass/style.scss */
 #intro {
   color: white;
   width: 100%;
   text-align: center;
 }
-/* line 75, ../sass/style.scss */
+/* line 76, ../sass/style.scss */
 #intro h2 {
   font-size: 2rem;
   margin: 0 0 0 0;
 }
-/* line 79, ../sass/style.scss */
+/* line 80, ../sass/style.scss */
 #intro h1 {
   font-size: 4rem;
   margin: .1em 0 .1em 0;
 }
-/* line 83, ../sass/style.scss */
+/* line 84, ../sass/style.scss */
 #intro h3 {
   margin: 80px 0 0 0;
   font-size: 4rem;
 }
 
-/* line 89, ../sass/style.scss */
+/* line 90, ../sass/style.scss */
 .clear, header, #intro {
   background: url("../images/train.jpg") fixed;
 }
 
-/* line 93, ../sass/style.scss */
+/* line 94, ../sass/style.scss */
 .cursive {
   font-family: 'Marck Script';
   font-weight: normal;

@@ -57,14 +57,15 @@ nav{
 		background: url('../images/logo.png');
 		font-size: 42px;
 		margin: 0 0 0 0;
+		background-size: contain;
 	}
 }
 
 .logo{
-	/* display: inline-block; */
-	/* vertical-align: middle; */
-	/* width: 83px; */
-	/* height: 83px; */
+	display: inline-block;
+	vertical-align: middle;
+	width: 83px;
+	height: 83px;
 
 }
 #intro{
