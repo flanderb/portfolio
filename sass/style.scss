@@ -36,6 +36,7 @@ nav{
 	width: 100%;
 	margin: auto;
 	z-index: 999;
+	
 	li {
 		list-style-type: none;
 		display: inline-block;
@@ -54,18 +55,19 @@ nav{
 		text-align: center;
 	}
 	p{
-		background: url('../images/logo.png');
+		
 		font-size: 42px;
-		margin: 0 0 0 0;
-		background-size: contain;
+		margin: 18px 3px 0 0;
 	}
 }
 
 .logo{
+	background: url('../images/logo.png');
 	display: inline-block;
 	vertical-align: middle;
 	width: 83px;
 	height: 83px;
+	background-size: contain;
 
 }
 #intro{
@@ -82,7 +84,7 @@ nav{
 		margin: .1em 0 .1em 0;
 	}
 	h3 {
-	  margin: 80px 0 0 0;
+	  margin: 90px 0 0 0;
 	  font-size: 4rem;
   }
 }
@@ -96,4 +98,5 @@ nav{
 	font-weight: normal;
 	text-shadow: 1px 1px 2px #515151;
 	display: inline-block;
+
 }
