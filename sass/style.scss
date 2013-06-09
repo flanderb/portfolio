@@ -1,9 +1,12 @@
 /* style.scss */
-@import 'compass';
+/* @import 'compass'; */
+@import "bourbon/bourbon";
+@import "neat/neat";
 @import 'normalize.css';
 
-$test: lightcoral;
+$test: black;
 $background: #FFFFFF;
+$highlights: lightblue;
 
 * { @include box-sizing(border-box); }
 
@@ -25,16 +28,15 @@ header {
 	width: 100%;
 	/*height: 23px;*/
 	color: $background;
-
 }
 
 nav{
-	background-color: $test;
+	
 	color: $background;
 	font-size: 1.2rem;
 	position: fixed;
 	width: 100%;
-	margin: auto;
+	height: 10px;
 	z-index: 999;
 	
 	li {
@@ -44,11 +46,13 @@ nav{
 		vertical-align:middle;
 	}
 	ul {
+		background: rgb(54, 54, 54);
+		background: rgba(54, 54, 54, 0.5);
 		display: block;
 		position: absolute;
 		width: 100%;
 		margin: 0;
-		padding: 0;
+		padding: 0px;
 		top: 0;
 		left: 0;
 		right: 0;
@@ -61,6 +65,8 @@ nav{
 	}
 }
 
+a:link {color:$highlights;}  
+
 .logo{
 	background: url('../images/logo.png');
 	display: inline-block;
@@ -68,11 +74,11 @@ nav{
 	width: 83px;
 	height: 83px;
 	background-size: contain;
-
+	/* a:link{text-decoration:none} */
+	
 }
 #intro{
-	color: $background;
-	@extend .clear;
+	color: $test;
 	width: 100%;
 	text-align: center;
 	h2 {
