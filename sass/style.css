@@ -1,0 +1,106 @@
+@import url(normalize.css);
+/* style.scss */
+/* @import 'compass'; */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+clear, #intro {
+  background: url("../images/train.jpg") fixed; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html {
+  background: white;
+  font-size: 16px;
+  border-top: solid 0.125rem orange; }
+
+h2, h1 {
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif; }
+
+a {
+  -webkit-transition: all 0.15s ease-out 0;
+  -moz-transition: all 0.15s ease-out 0;
+  transition: all 0.15s ease-out 0;
+  color: white; }
+  a:hover, a:focus {
+    color: orange; }
+
+header {
+  width: 100%;
+  /*height: 23px;*/
+  color: black;
+  margin-top: 50px; }
+
+nav {
+  color: white;
+  font-size: 1.2rem;
+  position: fixed;
+  width: 100%;
+  z-index: 999; }
+  nav li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 1rem;
+    vertical-align: middle; }
+  nav ul {
+    background: rgba(0, 0, 0, 0.5);
+    display: block;
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    padding: 0px;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center; }
+  nav p {
+    font-size: 42px;
+    margin: 18px 3px 0 0; }
+  nav a {
+    text-decoration: none;
+    color: white; }
+
+a:link {
+  color: orange; }
+
+.logo {
+  background: url("../images/logo.png");
+  display: inline-block;
+  vertical-align: middle;
+  width: 83px;
+  height: 83px;
+  margin: 0 0 0 0;
+  background-size: contain; }
+
+#intro {
+  color: white;
+  width: 100%;
+  text-align: center; }
+  #intro h2 {
+    font-size: 2rem;
+    margin: 0 0 0 0; }
+  #intro h1 {
+    font-size: 4rem;
+    margin: .1em 0 .1em 0; }
+  #intro h3 {
+    margin: 100px 0 0 0;
+    font-size: 4rem; }
+
+.title_line {
+  border-bottom: 2px solid #fff;
+  display: inline-block;
+  width: 20%;
+  height: 2px;
+  margin: 0 15px 0 15px; }
+
+.cursive {
+  font-family: 'Marck Script';
+  font-weight: normal;
+  text-shadow: 1px 1px 2px #515151;
+  display: inline-block; }
