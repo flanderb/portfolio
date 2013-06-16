@@ -1,7 +1,7 @@
 /* style.scss */
-/* @import 'compass'; */
-@import "bourbon/bourbon";
-@import "neat/neat";
+@import 'compass'; 
+/*@import "bourbon/bourbon";
+@import "neat/neat";*/
 @import 'normalize.css';
 
 $test: black;
@@ -19,10 +19,41 @@ html{
 	background: $primary;
 	font-size: 16px;
     border-top: solid .125rem $highlights;
+    
 }
 
 body {
+	@extend clear;
+}
+
+article {
+	background: #fff;
+    position: relative;
+    z-index: 9;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    margin-bottom: 6rem;
+    /*@include box-shadow(0 1rem 1rem rgba(0,0,0,0.4), 0 -.5rem .75rem rgba(0,0,0,0.4));*/
+    
+	&:before, &:after {
+		content: '';
+		width: 100%;
+		display: block;
+		position: absolute;
+	}
 	
+	&:before {
+      height: 8px;
+      top: -7px;
+      background: transparent url(../images/jagged_bottom.png) repeat-x 0;
+    }
+    
+    &:after {
+      background: transparent url(../images/jagged_top.png) repeat-x 0;
+      height: 22px;
+      bottom: -15px;
+    }
+    
 }
 
 h2, h1{
@@ -44,7 +75,12 @@ header {
 	/*height: 23px;*/
 	color: $test;
 	margin-top: 50px;
-	@extend clear;
+}
+
+li {
+	list-style-type: none;
+	margin: 1rem;
+	vertical-align:middle;
 }
 
 nav{
@@ -54,13 +90,8 @@ nav{
 	position: fixed;
 	width: 100%;
 	z-index: 999;
+	margin-top: 15px;
 	
-	li {
-		list-style-type: none;
-		display: inline-block;
-		margin: 1rem;
-		vertical-align:middle;
-	}
 	ul {
 		background: transparentize( black, 0.5);
 		display: block;
@@ -72,6 +103,9 @@ nav{
 		left: 0;
 		right: 0;
 		text-align: center;
+	}
+	li{
+		display: inline-block;
 	}
 	p{
 		
@@ -94,12 +128,19 @@ a:link {color:$highlights;}
 	height: 83px;
 	margin: 0 0 0 0;
 	background-size: contain;
+	&:hover, &:focus {
+	  @include rotate(30deg);
+	  @include transition;
+	}
 }
 #intro{
 	color: $primary;
 	width: 100%;
 	text-align: center;
-	@extend clear;
+	padding-bottom: 0.5rem;
+;
+
+	display: block;
 	h2 {
 		font-size: 2rem;
 		margin: 0 0 0 0;
@@ -121,6 +162,7 @@ a:link {color:$highlights;}
 	height: 2px;
 	margin: 0 15px 0 15px;
 }
+
 .cursive {
 	font-family: 'Marck Script';
 	font-weight: normal;

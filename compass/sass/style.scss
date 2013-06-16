@@ -1,0 +1,106 @@
+/* style.scss */
+/* @import 'compass'; */
+@import 'normalize.css';
+
+$test: black;
+$background: #FFFFFF;
+$highlights: lightblue;
+
+* { @include box-sizing(border-box); }
+
+html{
+	background: $background;
+}
+
+body {
+	
+}
+
+h2, h1{
+	text-transform: uppercase;
+	font-family: 'Open Sans', sans-serif;
+}
+
+header {
+	@extend .clear;
+	width: 100%;
+	/*height: 23px;*/
+	color: $background;
+
+}
+
+nav{
+	background-color: $test;
+	color: $background;
+	font-size: 1.2rem;
+	position: fixed;
+	width: 100%;
+	margin: auto;
+	z-index: 999;
+	
+	li {
+		list-style-type: none;
+		display: inline-block;
+		margin: 1rem;
+		vertical-align:middle;
+	}
+	ul {
+		display: block;
+		position: absolute;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		top: 0;
+		left: 0;
+		right: 0;
+		text-align: center;
+	}
+	p{
+		
+		font-size: 42px;
+		margin: 18px 3px 0 0;
+	}
+}
+
+a:link {color:$highlights;}  
+
+.logo{
+	background: url('../images/logo.png');
+	display: inline-block;
+	vertical-align: middle;
+	width: 83px;
+	height: 83px;
+	background-size: contain;
+	/* a:link{text-decoration:none} */
+	
+}
+#intro{
+	color: $background;
+	@extend .clear;
+	width: 100%;
+	text-align: center;
+	h2 {
+		font-size: 2rem;
+		margin: 0 0 0 0;
+	}
+	h1 {
+		font-size: 4rem;
+		margin: .1em 0 .1em 0;
+	}
+	h3 {
+	  margin: 90px 0 0 0;
+	  font-size: 4rem;
+  }
+}
+
+.clear{ 
+	background: url('../images/train.jpg') fixed;
+}
+
+.cursive {
+	font-family: 'Marck Script';
+	font-weight: normal;
+	text-shadow: 1px 1px 2px #515151;
+	display: inline-block;
+
+}
