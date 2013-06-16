@@ -82,6 +82,14 @@ li {
 	margin: 1rem;
 	vertical-align:middle;
 }
+a{
+	text-decoration: none;
+	color: $primary;
+	&:hover, &:focus {
+		color: $highlights;
+		@include transition(all 5s);
+	}
+}
 
 nav{
 	
@@ -112,10 +120,7 @@ nav{
 		font-size: 42px;
 		margin: 18px 3px 0 0;
 	}
-	a{
-		text-decoration: none;
-		color: $primary;
-	}
+
 }
 
 a:link {color:$highlights;}  
@@ -130,7 +135,7 @@ a:link {color:$highlights;}
 	background-size: contain;
 	&:hover, &:focus {
 	  @include rotate(30deg);
-	  @include transition;
+	  @include transition(all 5s);
 	}
 }
 #intro{
